@@ -1,0 +1,110 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --default_color: #dfe6e9;
+  }
+.main
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #636e72;
+}
+.about_me
+{
+    position: relative;
+    height: 70%;
+    width: 45%;
+    max-width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+    background: var(--default_color);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.toggle_btn
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 40px;
+    width: 80px;
+    border-radius: 20px;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    display: flex;
+    align-items: center;
+}
+.toggler
+{
+    position: absolute;
+    /* content: ''; */
+    height: 30px;
+    width: 30px;
+    background: #000;
+    border-radius: 50%;
+    transition: 0.5s;
+    margin-left: 5px;
+    transition: all .5s;
+}
+.toggle_btn.active
+{
+    background: rgb(26, 163, 218);
+}
+.toggler.active
+{
+    transform: translateX(40px);
+}
+.img_div img
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 40px;
+    margin-top: 100px;
+}
+.about_me h2 
+{
+    color: rgb(26, 163, 218);
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+.about_me h3
+{
+    font-size: 20px;
+    color: black;
+}
+.social_icons 
+{
+    display: flex;
+    margin-top: 30px;
+}
+.icon
+{
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: #fff;
+    background: rgb(26, 163, 218);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.icon:hover
+{
+    transform: translateY(-10px) scale(1.3);
+}
